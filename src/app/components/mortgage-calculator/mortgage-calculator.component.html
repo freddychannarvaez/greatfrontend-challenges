@@ -1,0 +1,12 @@
+<section class="mortgage-calculator">
+  <h1>Mortgage Calculator</h1>
+  <form class="mortgage-calculator__form">
+    <label for="loan-amount">Loan Amount</label>
+    <input type="number" id="loan-amount" name="loan-amount" placeholder="Loan Amount" required [(ngModel)]="loanAmount">
+    <label for="loan-term">Loan Term</label>
+    <input type="number" id="loan-term" name="loan-term" placeholder="Loan Term" required [(ngModel)]="loanTerm">
+    <label for="annual-interest-rate">Annual Interest Rate</label>
+    <input type="number" id="annual-interest-rate" name="annual-interest-rate" placeholder="Annual Interest Rate" required [(ngModel)]="annualInterestRate">
+    <button type="submit" (click)="getMonthlyMortgagePayment()">Calculate</button>
+  </form>
+</section>
